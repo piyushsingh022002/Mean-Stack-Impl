@@ -1,0 +1,23 @@
+{
+  "name": "mernstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piyushsingh022002/Mean-Stack-Impl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piyushsingh022002/Mean-Stack-Impl/issues"
+  },
+  "homepage": "https://github.com/piyushsingh022002/Mean-Stack-Impl#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
