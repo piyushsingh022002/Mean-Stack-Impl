@@ -2,9 +2,10 @@ import dotenv from "dotenv";
 
 import express from "express"
 import notesRoutes from "./Routes/notesRoutes.js"
+import authRoutes from "./Routes/authRoutes.js"
 // const express = require("express");
 import connectDB from "./configs/db.js";
-import rateLimiter from "./middleware/rateLimiter.js";
+// import rateLimiter from "./middleware/rateLimiter.js";
 
 dotenv.config({ override: true });
 
@@ -22,6 +23,8 @@ const port = process.env.PORT || 5001;
  })
 
  //app.use(rateLimiter); // applying rate limiter middleware globally
+
+ app.use("/api/auth", authRoutes);
 
 //whenever request comes from an url, which starts from /api/notes, it will be handled by notesRoutes
 app.use("/api/notes", notesRoutes);
