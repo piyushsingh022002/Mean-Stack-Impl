@@ -9,6 +9,8 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 5001;
  connectDB();
+
+ app.use(express.json());
 //whenever request comes from an url, which starts from /api/notes, it will be handled by notesRoutes
 app.use("/api/notes", notesRoutes);
 
